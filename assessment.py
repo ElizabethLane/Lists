@@ -98,7 +98,13 @@ def every_other_item(items):
        ['you', 'are', 'good', 'at', 'code']
     """
 
-    return ['the wrong thing']
+    skip_an_item = []
+    for index in range(len(items)):
+        if index == 0:
+            skip_an_item.append(items[index])
+        elif index % 2 == 0:
+            skip_an_item.append(items[index])
+    return skip_an_item
 
 
 def largest_n_items(items, n):
