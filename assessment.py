@@ -76,8 +76,8 @@ def foods_in_common(foods1, foods2):
     setted_foods1 = set(foods1)
     setted_foods2 = set(foods2)
     same_foods = (setted_foods1 & setted_foods2)
-    list_same_foods = list(same_foods)
-    ordered_same_foods = sorted(list_same_foods)
+    listed_same_foods = list(same_foods)
+    ordered_same_foods = sorted(listed_same_foods)
     if len(ordered_same_foods) > 0:
         return ordered_same_foods
     else:
