@@ -129,7 +129,21 @@ def largest_n_items(items, n):
         [3, 3]
     """
 
-    return []
+    ascending_list = []
+    while items:
+        numbers_list = items[0]
+        for number in items:
+            if number > numbers_list:
+                numbers_list = number
+        ascending_list.append(numbers_list)
+        items.remove(numbers_list)
+        
+        ascending_to_n_list = ascending_list[:n]
+        ascending_to_n_list_final = ascending_to_n_list[::-1]
+        
+
+
+    return ascending_to_n_list_final
 
 
 #####################################################################
